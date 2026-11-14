@@ -18,6 +18,11 @@ const bytes = Buffer.from(readFileSync(join(here, 'image.b64'), 'utf8').replace(
 if (bytes.length < 3 || bytes[0] !== 0xff || bytes[1] !== 0xd8 || bytes[2] !== 0xff) {
   throw new Error('image.b64 did not decode to a JPEG');
 }
+// A JPEG also ends with the EOI marker FF D9; refuse a picture cut short
+// at the end, so a truncated download never reaches the judge either.
+if (bytes.length < 2 || bytes[bytes.length - 2] !== 0xff || bytes[bytes.length - 1] !== 0xd9) {
+  throw new Error('image.b64 did not decode to a complete JPEG');
+}
 // The gate allows at most 1 MiB; refuse an oversized picture here too.
 if (bytes.length > 1048576) {
   throw new Error('decoded picture exceeds 1 MiB');

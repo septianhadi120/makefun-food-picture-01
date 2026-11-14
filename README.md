@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/food-picture-01/septianhadi120/makefun-food-picture-01/rank.svg)](https://make.fun/bounty/food-picture-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=food-picture-01)
 [![reward](https://make.fun/badge/food-picture-01/septianhadi120/makefun-food-picture-01/reward.svg)](https://make.fun/bounty/food-picture-01?utm_source=github&utm_medium=readme&utm_campaign=food-picture-01)
 
-A steaming double cheeseburger with melting cheddar, a glossy brioche bun and fresh toppings, photographed in warm dramatic light. The program ships the picture and writes it to the output path.
+A hand lifting a slice of wood-fired margherita pizza from the whole pie, long strands of molten mozzarella stretching, blistered leopard-spotted crust, glossy San Marzano tomato sauce and fresh basil, the glow of the oven's embers behind. The program ships the picture and writes it to the output path.
 
 ## Run it
 
